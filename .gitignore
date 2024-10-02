@@ -25,6 +25,7 @@ Apache-Airflow/datalake/**
 # Ignore all files in API folders but keep .py files
 Apache-Airflow/src/API_*/**/*
 !Apache-Airflow/src/API_*/**/*.py
+!Apache-Airflow/src/API_*/**/*.ipynb
 
 # Ignore files from specific folders in notebooks directory
 Apache-Airflow/src/notebooks/output/tweet/**
