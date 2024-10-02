@@ -2,7 +2,8 @@ venv
 requirements.txt
 
 __pycache__/
-*.py
+*.pyc
+
 # Ignore specific file types in airflow_pipeline
 Apache-Airflow/airflow_pipeline/*.cfg
 Apache-Airflow/airflow_pipeline/*.db
