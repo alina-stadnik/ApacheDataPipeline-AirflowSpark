@@ -1,0 +1,47 @@
+venv
+requirements.txt
+
+# Ignore specific file types in airflow_pipeline
+Apache-Airflow/airflow_pipeline/*.cfg
+Apache-Airflow/airflow_pipeline/*.db
+Apache-Airflow/airflow_pipeline/*.err
+Apache-Airflow/airflow_pipeline/*.log
+Apache-Airflow/airflow_pipeline/*.out
+Apache-Airflow/airflow_pipeline/*.pid
+Apache-Airflow/airflow_pipeline/*.txt
+Apache-Airflow/airflow_pipeline/webserver_config.py
+Apache-Airflow/airflow_pipeline/datalake/*/* 
+
+# Ignore logs folders anywhere in the repository
+Apache-Airflow/airflow_pipeline/logs/**
+
+# Ignore files inside tweet and user folders
+Apache-Airflow/dados_transformation/tweet/** 
+Apache-Airflow/dados_transformation/user/** 
+
+# Ignore all files and subfolders in the datalake directory
+Apache-Airflow/datalake/**
+
+# Ignore all files in API folders but keep .py files
+Apache-Airflow/src/API_*/**/*
+!Apache-Airflow/src/API_*/**/*.py
+
+# Ignore files from specific folders in notebooks directory
+Apache-Airflow/src/notebooks/output/tweet/**
+Apache-Airflow/src/notebooks/output/user/**
+
+# Ignore files from specific folders in spark directory
+Apache-Airflow/src/spark/tweet/**
+Apache-Airflow/src/spark/user/**
+
+# Ignore the Spark tarball
+spark-3.1.3-bin-hadoop3.2.tgz
+
+# Ignore shell script for Helm installation
+get_helm.sh
+
+# Ignore Minikube binary
+minikube-linux-amd64
+
+# Ignore the entire Spark directory
+spark-3.1.3-bin-hadoop3.2/
